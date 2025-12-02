@@ -260,8 +260,8 @@ sudo mkdir -p /var/lib/node_exporter/textfile_collector
 # prometheus.yml
 scrape_configs:
   - job_name: 'node'
-	static_configs:
-	  - targets: ['localhost:9100']
+    static_configs:
+      - targets: ['localhost:9100']
 ```
 
 **Atomic writes:** The `mv` operation ensures Prometheus never reads partial files.
